@@ -14,9 +14,9 @@ And now, you need yo know that I love these kind of challenges that, from nothin
 # Way of comparing
 To create a bench test that was "solid", I've created a console app that creates random values using [Bogus] library into a table named *AccountsWithoutIndex*. After this table is filled, I copy all the generated data to another table which has an index on the Country field *AccountsWithIndex*.
 
-Code: ...
+Note: Console app code is [here](./LSG.BenchTests.SqlInVersusOr/Program.cs)
 
-I've created two runs to compare. The results were too sparse with 10k elements, this is why I've did a second run with 1M elements.:
+I've created two runs to compare. The results were too sparse with 10k elements (less than 0.01EOC), this is why I've did a second run with 1M elements.:
 - Run 1: 10k elements
 - Run 2: 1M elements 
 
@@ -32,7 +32,7 @@ SELECT * FROM dbo.AccountsWithIndex WHERE Country = 'Comoros' OR Country = 'Gree
 SELECT * FROM dbo.AccountsWithIndex WHERE Country IN ('Comoros', 'Greece', 'Micronesia')
 ```
 
-I will not present the results of the 1st run (10k elements) because this is too fast to produce a real difference. But, for the second run, here are the results:
+I will not present the results of the 1st run (10k elements) because it was too fast to produce a real difference. But, for the second run, here are the results:
 
 | Table | Using OR | Using IN |
 |-------|----------|----------|
