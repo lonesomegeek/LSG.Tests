@@ -1,6 +1,6 @@
 # Benchmarking Tests - SQL IN vs OR
 
-The other day, I as having a chat with one of my collegue [yden063] and he was asking me: 
+The other day, I was having a chat with one of my collegue [yden063] and he was asking me: 
 > Collegue: How can I do a dynamic comparaison (multiple ORs ie.: X = A OR X = B OR ...) with LINQ in C# (Dynamic Where)... 
 
 > Me: Why do you want to do that, will it be easier to write down with an X IN (A, B, C) statement with LINQ (Contains)?
