@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSG.BenchTests.SqlInVersusOr", "LSG.BenchTests.SqlInVersusOr\LSG.BenchTests.SqlInVersusOr.csproj", "{412AE5DC-CD31-458C-9F38-1339774EC1AD}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LSG.BenchTests.SqlInVersusOr.Database", "LSG.BenchTests.SqlInVersusOr.Database\LSG.BenchTests.SqlInVersusOr.Database.sqlproj", "{E169B41D-CE4D-42B0-B7D4-55FACB5BBFBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{412AE5DC-CD31-458C-9F38-1339774EC1AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412AE5DC-CD31-458C-9F38-1339774EC1AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412AE5DC-CD31-458C-9F38-1339774EC1AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412AE5DC-CD31-458C-9F38-1339774EC1AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E169B41D-CE4D-42B0-B7D4-55FACB5BBFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E169B41D-CE4D-42B0-B7D4-55FACB5BBFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E169B41D-CE4D-42B0-B7D4-55FACB5BBFBD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E169B41D-CE4D-42B0-B7D4-55FACB5BBFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E169B41D-CE4D-42B0-B7D4-55FACB5BBFBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E169B41D-CE4D-42B0-B7D4-55FACB5BBFBD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65BB5D58-9638-4B92-A569-38BAC0C6447E}
+	EndGlobalSection
+EndGlobal
