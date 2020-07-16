@@ -34,9 +34,10 @@ SELECT * FROM dbo.AccountsWithIndex WHERE Country IN ('Comoros', 'Greece', 'Micr
 
 I will not present the results of the 1st run (10k elements) because this is too fast to produce a real difference. But, for the second run, here are the results:
 
-| Table | Using OR | Using IN
-| AccountsWithoutIndex | 12EC | 12 EC |
-| AccountsWithIndex | 8.42EC | 8.42 EC |
+| Table | Using OR | Using IN |
+|-------|----------|----------|
+| AccountsWithoutIndex | 12EOC | 12EOC |
+| AccountsWithIndex | 8.42EOC | 8.42EOC |
 
 Result... it is exactly the same time. I do not know how it really works in the backend of SQL Server but it seems to be converting in the end OR statements in IN clause or vice-versa.
 
